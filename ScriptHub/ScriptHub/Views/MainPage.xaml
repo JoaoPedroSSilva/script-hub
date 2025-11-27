@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ScriptHub.ViewModels"
              x:Class="ScriptHub.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel />
+    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout
@@ -17,13 +22,20 @@
                 Text="Central de scripts de automação"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Central de scripts de automação de rotinas" />
+                SemanticProperties.Description="Central de scripts" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                HorizontalOptions="Fill" />
+            <HorizontalStackLayout Spacing="15" HorizontalOptions="Center" Padding="10">
+                <VerticalStackLayout>
+                    <Button Text="Automatização" />
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Button Text="Conferências" />
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Button Text="Conversores" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
 

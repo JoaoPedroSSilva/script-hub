@@ -25,15 +25,9 @@
                 SemanticProperties.Description="Central de scripts" />
 
             <HorizontalStackLayout Spacing="15" HorizontalOptions="Center" Padding="10">
-                <VerticalStackLayout>
-                    <Button Text="Automatização" />
-                </VerticalStackLayout>
-                <VerticalStackLayout>
-                    <Button Text="Conferências" />
-                </VerticalStackLayout>
-                <VerticalStackLayout>
-                    <Button Text="Conversores" />
-                </VerticalStackLayout>
+                <Button Text="Automatização" Command="{Binding GoToAutomationsScriptsPageCommand}" />
+                <Button Text="Conferências" Command="{Binding GoToVerificationsScriptsPageCommand}" />
+                <Button Text="Conversores" Command="{Binding GoToConvertersScriptsPageCommand}" />
             </HorizontalStackLayout>
 
         </VerticalStackLayout>

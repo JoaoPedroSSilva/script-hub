@@ -1,8 +1,8 @@
 namespace ScriptHub.Views;
 
-public partial class AutomationsPage : ContentPage
+public partial class AutomationsScriptsPage : ContentPage
 {
-	public AutomationsPage()
+	public AutomationsScriptsPage()
 	{
 		InitializeComponent();
 	}

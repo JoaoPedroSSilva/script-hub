@@ -4,12 +4,28 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ScriptHub"
+    xmlns:views="clr-namespace:ScriptHub.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="ScriptHub">
 
     <ShellContent
-        Title="Home"
+        Title="Página Principal"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+    Title="Scripts de Automação"
+    ContentTemplate="{DataTemplate views:AutomationsScriptsPage}"
+    Route="AutomationsScriptsPage" />
+
+    <ShellContent
+    Title="Página Principal"
+    ContentTemplate="{DataTemplate views:ConvertersScriptsPage}"
+    Route="ConvertersScriptsPage" />
+
+    <ShellContent
+    Title="Página Principal"
+    ContentTemplate="{DataTemplate views:VerificationsScriptsPage}"
+    Route="VerificationsScriptsPage" />
 
 </Shell>

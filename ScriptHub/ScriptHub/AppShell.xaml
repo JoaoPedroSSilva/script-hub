@@ -19,12 +19,12 @@
     Route="AutomationsScriptsPage" />
 
     <ShellContent
-    Title="Página Principal"
+    Title="Scripts de Conversão"
     ContentTemplate="{DataTemplate views:ConvertersScriptsPage}"
     Route="ConvertersScriptsPage" />
 
     <ShellContent
-    Title="Página Principal"
+    Title="Scripts de Conferência"
     ContentTemplate="{DataTemplate views:VerificationsScriptsPage}"
     Route="VerificationsScriptsPage" />
 
